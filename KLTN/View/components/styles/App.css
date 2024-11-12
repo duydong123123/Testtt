@@ -1,0 +1,71 @@
+/* App.css */
+
+/* Reset margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333; /* Thêm màu chữ mặc định */
+  line-height: 1.6; /* Tăng khoảng cách giữa các dòng để dễ đọc hơn */
+}
+
+h3, h5 {
+  color: #008000; /* Màu sắc cho các tiêu đề */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 20px 0; /* Thêm padding cho header */
+}
+
+footer {
+  padding: 10px 0; /* Thêm padding cho footer */
+  background-color: #ffffff; /* Nền trắng cho footer */
+  border-top: 1px solid #e8e8e8; /* Đường viền trên footer */
+}
+
+button {
+  cursor: pointer; /* Thêm con trỏ cho button */
+  transition: background-color 0.3s; /* Thêm hiệu ứng chuyển màu cho button */
+}
+
+button:hover {
+  background-color: #005600; /* Thay đổi màu nền khi hover */
+}
+
+a {
+  color: #1890ff; /* Màu chữ cho liên kết */
+  text-decoration: none; /* Bỏ gạch chân */
+}
+
+a:hover {
+  text-decoration: underline; /* Thêm gạch chân khi hover */
+}
+
+/* Thêm các style cho form */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s; /* Thêm hiệu ứng chuyển màu cho input */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #008000; /* Đổi màu viền khi input được focus */
+}
